@@ -7,4 +7,4 @@
 #   Character.create(name: "Luke", movie: movies.first)
     Airport.create(name: "Domodedovo", code: "DMD")
     Airport.create(name: "Vnukovo", code: "VNK")
-    Airport.create(name: "Tolmachevo", code: "TLM")
+    Airport.create(name: "Tolmachevo", code: "TLM")  
