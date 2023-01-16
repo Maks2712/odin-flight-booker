@@ -19,14 +19,14 @@
 </div>
 </span>
 
-<%= form_with url: "/search", method: :get, data: { turbo: false} do |form| %>
-  <%= form.label :flight_duration, "Search for:" %>
-  <%= form.text_field :flight_duration %>
-  <%= form.submit "Search" %>
+<%= form_with url: "/search", method: :get, data: { turbo: false} do %>
+  <%= label_tag :flight_duration, "Search for:" %>
+  <%= text_field_tag :flight_duration, params[:flight_duration] %>
+  <%= submit_tag ("Search", :name => nil) %>
 <% end %>
-<% @flight_results.each do |flight| %>
+<% @flights.each do |flight| %>
     <li>
-      <%= link_to "#{event.title} #{event.created_at}", user_event_path(@user, event)%>
+      <%= link_to "#{flight.start_date} from #{flight.departure_airport_id} to #{flight.arrival_airport_id}", "#" %>
     </li>
   <% end %>
 
