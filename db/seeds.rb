@@ -9,5 +9,5 @@
     Airport.create(name: "Vnukovo", code: "VNK")
     Airport.create(name: "Tolmachevo", code: "TLM")  
     Flight.create(flight_duration: '20:00', departure_airport_id: 1, arrival_airport_id: 2, start_date: '20/01/2023')
-    Flight.create(flight_duration: "2:00", departure_airport_id: 2, arrival_airport_id: 3, start_date: '21/02/2023')
+   Flight.create(flight_duration: "2:00", departure_airport_id: 2, arrival_airport_id: 3, start_date: '21/02/2023')
     Flight.create(flight_duration: "5:00", departure_airport_id: 3, arrival_airport_id: 1, start_date: '22/03/2023')

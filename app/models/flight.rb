@@ -3,6 +3,7 @@ class Flight < ApplicationRecord
     belongs_to :arrival_airport, class_name: 'Airport', foreign_key: :arrival_airport_id
 
     #https://womenwhocode.medium.com/adding-a-basic-search-form-in-rails-91782996c3f0
+=begin
     def self.search(search)
         if search
             flight=Flight.find_by(name: search)
@@ -15,6 +16,7 @@ class Flight < ApplicationRecord
             @flights=Flight.all
     end 
 end
+=end
 end
 
  
